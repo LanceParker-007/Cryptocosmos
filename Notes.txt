@@ -5,6 +5,17 @@
 ->At 24:35 Switch component from react router dom
 ->src/index.js line 3 browser one
 
-!st commit at 33 min 
+1st commit at 33 min 
 
 ->Build Homepage 
+
+2nd commit : add Basic Homepage
+
+-> At:39 , services folder created - redux's new way to fetch data
+
+->At 39:48 :Create Store for redux application one central state of truth meaing your entire applications state
+->at:40:36 :Created reducer! What is reducer ?
+->at:41:09 : What is provider ?
+->At:44 dobara samajhna
+->At:48 something about export
+->At:52:40 :Use of millify
