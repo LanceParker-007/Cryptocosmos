@@ -4,3 +4,7 @@
 ->At: 24.20 <Layput component of antd>
 ->At 24:35 Switch component from react router dom
 ->src/index.js line 3 browser one
+
+!st commit at 33 min 
+
+->Build Homepage 
