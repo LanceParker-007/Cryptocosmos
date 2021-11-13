@@ -1,0 +1,6 @@
+-> dependencies/packages : at 8 min
+-> At: 20min
+->At: 22 (Menu component)
+->At: 24.20 <Layput component of antd>
+->At 24:35 Switch component from react router dom
+->src/index.js line 3 browser one
