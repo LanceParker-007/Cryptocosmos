@@ -24,7 +24,7 @@ const CryptoDetails = () => {
 
     return (
         <div>
-            cryptoDetails
+            Sorry! Will be added soon ✌
         </div>
     )
 
