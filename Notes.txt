@@ -19,3 +19,8 @@
 ->At:44 dobara samajhna
 ->At:48 something about export
 ->At:52:40 :Use of millify
+
+->At:58 : <></> this is called react fragment
+->At:1.01.50 : About millify
+
+----Have to commit here : fetch all crypto currencies using api and displaying them on home page!
