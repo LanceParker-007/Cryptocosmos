@@ -24,3 +24,6 @@
 ->At:1.01.50 : About millify
 
 ----Have to commit here : fetch all crypto currencies using api and displaying them on home page!
+
+->At: 1:03: : simplified, how many display on home page
+->At 1:06: Add Search feature to search crypto currencies on homepage in crptocurrencies.jsx
