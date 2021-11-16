@@ -24,7 +24,7 @@ const App = () => {
                             <Route exact path="/cryptocurrencies">
                                 <Cryptocurrencies />
                             </Route>
-                            <Route exact path="/crypto/:coinID"> /* : means dynamic */
+                            <Route exact path="/crypto/:coinID">
                                 <CryptoDetails />
                             </Route>
                             <Route exact path="/news">
