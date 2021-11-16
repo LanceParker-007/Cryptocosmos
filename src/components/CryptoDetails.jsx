@@ -7,7 +7,7 @@ import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCi
 
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from '../services/cryptoApi';
 // import Loader from './Loader';
-// import LineChart from './LineChart';
+import LineChart from './LineChart';
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -16,8 +16,10 @@ const CryptoDetails = () => {
     const { coinId } = useParams();
     const [timeperiod, setTimeperiod] = useState('7d');
     const { data, isFetching } = useGetCryptoDetailsQuery(coinId);
-    // const { data: coinHistory } = useGetCryptoHistoryQuery({ coinId, timeperiod });
+    const { data: coinHistory } = useGetCryptoHistoryQuery({ coinId, timeperiod });
     const cryptoDetails = data?.data?.coin;
+
+    if (isFetching) return 'Loading..';
 
     const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
 
@@ -38,15 +40,14 @@ const CryptoDetails = () => {
     ];
 
     return (
-        <>
-            <Col className="coin-detail-container">
-                <Col className="coin-heading-container">
-                    <Title level={2} className="coin-name">
-                        {data?.data?.coin.name} ({data?.data?.coin.slug}) Price
-                    </Title>
-                    <p>{cryptoDetails.name} live price in US Dollar (USD). View value statistics, market cap and supply.</p>
-                </Col>
-                {/* <Select defaultValue="7d" className="select-timeperiod" placeholder="Select Timeperiod" onChange={(value) => setTimeperiod(value)}>
+        <Col className="coin-detail-container">
+            <Col className="coin-heading-container">
+                <Title level={2} className="coin-name">
+                    {data?.data?.coin.name} ({data?.data?.coin.slug}) Price
+                </Title>
+                <p>{cryptoDetails.name} live price in US Dollar (USD). View value statistics, market cap and supply.</p>
+            </Col>
+            <Select defaultValue="7d" className="select-timeperiod" placeholder="Select Timeperiod" onChange={(value) => setTimeperiod(value)}>
                 {time.map((date) => <Option key={date}>{date}</Option>)}
             </Select>
             <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails.price)} coinName={cryptoDetails.name} />
@@ -96,10 +97,9 @@ const CryptoDetails = () => {
                         </Row>
                     ))}
                 </Col>
-            </Col> */}
             </Col>
-        </>
-    )
-}
+        </Col>
+    );
+};
 
-export default CryptoDetails
+export default CryptoDetails;
