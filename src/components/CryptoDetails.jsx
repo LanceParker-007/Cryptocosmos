@@ -24,7 +24,8 @@ const CryptoDetails = () => {
 
     return (
         <div>
-            Sorry! Will be added soon ✌
+            Under maintenance ! <Loader />
+
         </div>
     )
 
