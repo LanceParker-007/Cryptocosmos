@@ -1,2 +1,2 @@
 A MERN stack app for all cryptocurrencies enthusiasts to get all crypto currencies related information in pne place.
-![Site image]("./src/images/cryptocosmos.png");
+![Site image]("./readmeimages/cryptocosmos.png");
